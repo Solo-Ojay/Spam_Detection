@@ -1,12 +1,3 @@
-import streamlit as st
-import subprocess
-
-def get_installed_packages():
-    result = subprocess.run(['pip', 'freeze'], stdout=subprocess.PIPE)
-    return result.stdout.decode('utf-8')
-
-st.text(get_installed_packages())
-
 import pandas as pd
 from sklearn.model_selection import train_test_split
 from sklearn.feature_extraction.text import CountVectorizer
