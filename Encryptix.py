@@ -9,7 +9,7 @@ st.title("SPAM SMS DETECTION APP")
 st.write("Checks if message is spam or not.")
 
 # dataset
-data = pd.read_csv(r"C:\Users\HP\Downloads\sms_text.csv")
+data = pd.read_csv("https://raw.githubusercontent.com/Solo-Ojay/Spam_Detection/master/sms_text.csv")
 
 # Splitting the data into message and labels
 X = data['Message']
