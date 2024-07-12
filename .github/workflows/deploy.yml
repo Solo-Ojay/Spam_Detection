@@ -22,10 +22,11 @@ jobs:
       run: |
         python -m venv myenv
         source myenv/bin/activate
-        pip install -r requirements.txt
+        pip install -r requirement.txt
 
     - name: Run Streamlit
       run: |
         source myenv/bin/activate
         streamlit run Encryptix.py
+
 
